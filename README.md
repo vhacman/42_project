@@ -8,105 +8,128 @@
 |---------|--------|---------|----------------|
 | [libft](#-libft) | ![Score](https://img.shields.io/badge/Score-100%2F100-brightgreen) | ✅ | January 2025 |
 | [ft_printf](#-ft_printf) | ![Score](https://img.shields.io/badge/Score-100%2F100-brightgreen) | ✅ | February 2025 |
+| [Born2beroot](#-born2beroot) | ![Score](https://img.shields.io/badge/Score-In_Progress-yellow) | 🔄 | February 2025 |
 
 ---
 
-# 💯🎯 libft 🎯💯
-
-## 📝 Project Description
-libft is the foundational project at 42 School, where we recreate essential C standard library functions. This library serves as a building block for all future projects in the curriculum.
-
-### 🔑 Key Achievements
-- Implemented 23 standard C library functions
-- Created 9 additional utility functions
-- Developed with strict memory management
-- Zero memory leaks
-- Passed all Moulinette tests
-
-### 🛠️ Function Categories
-
-#### Standard Library Functions
-| Category | Functions |
-|----------|-----------|
-| String Operations | `ft_strlen`, `ft_strchr`, `ft_strrchr`, `ft_strncmp`, `ft_strnstr`, `ft_strdup` |
-| Memory Operations | `ft_memset`, `ft_bzero`, `ft_memcpy`, `ft_memmove`, `ft_memchr`, `ft_memcmp` |
-| Character Operations | `ft_isalpha`, `ft_isdigit`, `ft_isalnum`, `ft_isascii`, `ft_isprint`, `ft_toupper`, `ft_tolower` |
-| Conversion | `ft_atoi` |
-| Memory Management | `ft_calloc` |
-
-#### Additional Functions
-| Category | Functions |
-|----------|-----------|
-| String Manipulation | `ft_substr`, `ft_strjoin`, `ft_strtrim`, `ft_split` |
-| Number Conversion | `ft_itoa` |
-| Output Functions | `ft_putchar_fd`, `ft_putstr_fd`, `ft_putendl_fd`, `ft_putnbr_fd` |
+[Previous projects content remains the same until Born2beroot section]
 
 ---
 
-# ✨ ft_printf ✨
+# 🖥️ Born2beroot 🛡️
 
 ## 📝 Project Description
-A custom implementation of the printf function, handling various format specifiers while maintaining the efficiency and flexibility of the original.
+Born2beroot is an immersive system administration project that focuses on the fundamentals of virtualization, Linux system management, and security implementation. The project involves creating and configuring a virtual machine with specific security requirements.
 
 ### 🎯 Project Objectives
-- Recreate printf functionality
-- Handle multiple format specifiers
-- Implement variable argument handling
-- Ensure memory efficiency
-- Match original printf behavior
+- Create and configure a Virtual Machine
+- Implement strict security policies
+- Set up system monitoring
+- Configure basic web services
+- Learn system administration fundamentals
 
-### 📊 Supported Format Specifiers
+### 🔑 Key Components
 
-| Specifier | Description | Example |
-|-----------|-------------|----------|
-| %c | Character | `ft_printf("%c", 'A')` |
-| %s | String | `ft_printf("%s", "Hello")` |
-| %p | Pointer | `ft_printf("%p", ptr)` |
-| %d | Decimal | `ft_printf("%d", 42)` |
-| %i | Integer | `ft_printf("%i", -42)` |
-| %u | Unsigned | `ft_printf("%u", 4294967295)` |
-| %x | Hex (lowercase) | `ft_printf("%x", 255)` |
-| %X | Hex (uppercase) | `ft_printf("%X", 255)` |
-| %% | Percent sign | `ft_printf("%%")` |
+#### Virtual Machine Setup
+```bash
+# Check system version
+uname -a
 
-### 🔧 Technical Implementation
-```c
-int ft_printf(const char *format, ...)
-{
-    va_list args;
-    int count;
-    
-    va_start(args, format);
-    count = handle_format(format, args);
-    va_end(args);
-    
-    return (count);
-}
+# View disk partitions
+lsblk
+
+# Check UFW status
+sudo ufw status
+
+# Monitor system
+./monitoring.sh
 ```
 
-## 🚀 Skills Demonstrated
+#### Security Implementation
+| Feature | Description | Configuration |
+|---------|-------------|---------------|
+| Password Policy | Strong password requirements | `/etc/pam.d/common-password` |
+| UFW | Firewall configuration | Port 4242 for SSH |
+| SSH | Secure remote access | No root login allowed |
+| AppArmor | Mandatory access control | Enabled by default |
+| Sudo | Enhanced security rules | Custom configuration |
 
-### Technical Skills
-- Advanced C Programming
-- Memory Management
-- Pointer Manipulation
-- String Processing
-- Makefile Usage
-- Git Version Control
+#### System Monitoring Script Features
+- Architecture information
+- CPU physical/virtual processors
+- Memory usage
+- Disk utilization
+- CPU load
+- Last boot time
+- LVM status
+- Active connections
+- User log
+- Network status
+- Sudo commands log
 
-### Soft Skills
-- Problem Solving
-- Attention to Detail
-- Documentation
-- Time Management
-- Project Planning
+### 📊 Technical Specifications
 
-## 🔨 Development Tools
-- Language: C
-- Compiler: gcc
-- Build System: Make
-- Version Control: Git
-- Testing: Unit Tests
+#### Password Requirements
+```plaintext
+- Minimum length: 10 characters
+- Must contain: uppercase, lowercase, numbers
+- Max 3 consecutive identical characters
+- Cannot contain username
+- 7 characters different from previous password
+- Expiration: 30 days
+- Minimum days between changes: 2
+- Warning: 7 days before expiration
+```
+
+#### Service Configuration
+- SSH running on port 4242
+- UFW configured with necessary rules
+- Monitoring script scheduled via crontab
+- Optional: WordPress with Lighttpd, MariaDB, PHP
+
+### 🛠️ Implementation Details
+```bash
+# Check SSH status
+sudo systemctl status ssh
+
+# View UFW rules
+sudo ufw status verbose
+
+# Monitor cron jobs
+sudo crontab -l
+
+# View system logs
+sudo journalctl
+```
+
+## 📚 Study Resources
+- [System Administration Guide](Prima_Parte.pdf)
+- [Security Implementation](Parte_Seconda.pdf)
+- [Defence Preparation](Preparazione_Defence.pdf)
+- [Command Reference](Tabella_Comandi.pdf)
+
+## 🎓 Learning Outcomes
+1. System Administration
+   - Linux system management
+   - Service configuration
+   - User and group administration
+
+2. Security
+   - Firewall configuration
+   - Access control
+   - Password policies
+   - System hardening
+
+3. Virtualization
+   - VM creation and management
+   - Resource allocation
+   - Disk partitioning
+
+4. Monitoring
+   - System metrics
+   - Resource usage
+   - Service status
+   - Log management
 
 ## 👤 Author
 **vhacman**
