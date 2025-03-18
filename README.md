@@ -20,8 +20,8 @@ Lo stile e l’impostazione rispecchiano le altre sezioni esistenti; nella tabel
 |------------------------------------|-----------------------------------|------------------------------------------------------|--------|--------------|
 | [libft](#-libft)                   | C Standard Library Recreation     | ![Score](https://img.shields.io/badge/Score-100%2F100-brightgreen) | ✅      | January 2025 |
 | [ft_printf](#-ft_printf)           | Printf Function Implementation    | ![Score](https://img.shields.io/badge/Score-100%2F100-brightgreen) | ✅      | February 2025 |
-| [get_next_line](#-get-next-line-gnl) | Read File Descriptors by Lines    | ![Score](https://img.shields.io/badge/Score-100%2F100-brightgreen) | ✅      | March 2025   |
-| [Born2beroot](#%EF%B8%8F-born2beroot) | System Administration             | ![Score](https://img.shields.io/badge/Score-110-green)     |✅      | February 2025 |
+| [get_next_line](#-get-next-line-gnl) | Read File Descriptors by Lines    | ![Score](https://img.shields.io/badge/Score-125%2F100-brightgreen) | ✅      | March 2025   |
+| [Born2beroot](#%EF%B8%8F-born2beroot) | System Administration             | ![Score](https://img.shields.io/badge/Score-110%F100-green)     |✅      | February 2025 |
 
 ---
 
