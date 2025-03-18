@@ -1,12 +1,3 @@
-1. **libft**  
-2. **ft_printf**  
-3. **get_next_line (GNL)**  
-4. **Born2beroot**
-
-Lo stile e l’impostazione rispecchiano le altre sezioni esistenti; nella tabella iniziale puoi aggiungere il tuo nuovo progetto GNL con relativo stato e punteggio (se già completato). Puoi ovviamente **personalizzare** date, punteggi e dettagli secondo necessità.
-
----
-
 # 42 Roma Portfolio - Common Core
 ![42 Roma Badge](https://img.shields.io/badge/42-Roma_Luiss-2BA5DE)
 ![Profile](https://img.shields.io/badge/Profile-vhacman-orange)
