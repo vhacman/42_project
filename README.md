@@ -269,9 +269,6 @@ wall "
 - 42 Intra Profile: [vhacman](https://profile.intra.42.fr/)  
 - Github: [@vhacman](https://github.com/DevGabi98)
 
-## 📊 GitHub Statistics
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=DevGabi98&show_icons=true&theme=radical)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=DevGabi98&layout=compact&theme=radical)
 
 ## 📄 License
 These projects are part of the 42 School curriculum. For usage and distribution, please refer to 42 School guidelines.
